@@ -1,0 +1,101 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+@import url(../warp/css/layout.css);
+
+
+/* Spacing
+----------------------------------------------------------------------------------------------------*/
+.module,
+#header,
+#breadcrumbs,
+#content,
+#footer { margin: 15px; }
+
+#menu .module { margin: 10px 5px; }
+
+#footer .module { margin: 0; }
+
+#toolbar,
+#headerbar { margin-bottom: 1px; }
+
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+#block-toolbar{ background-color: #d6d6ce;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6d6ce), to(#A9A9A6));
+  background-image: -webkit-linear-gradient(top, #d6d6ce, #A9A9A6);
+  background-image:    -moz-linear-gradient(top, #d6d6ce, #A9A9A6);
+  background-image:      -o-linear-gradient(top, #d6d6ce, #A9A9A6);
+  background-image:         linear-gradient(to bottom, #d6d6ce, #A9A9A6);
+padding:3px;
+
+ }
+
+
+
+#block-header{background:#003333 url(../images/map3.png) left center scroll no-repeat ;
+padding: 10px;
+border-top:5px double #A5A5A0;
+
+}
+
+#block-main{background:#D6D6CE url(../images/main.png) repeat ;
+padding: 15px ;
+border-top:5px double #A5A5A0;
+}
+
+#menu {background:transparent url(../images/menu.png);
+  
+
+text-shadow: 2px 2px 14px rgba(124, 117, 110, 0.84)
+}
+#menu {
+  
+	position: absolute;
+	right: -9px;
+	bottom: -20px;	
+	margin-bottom:5px;
+	margin-top:5px;
+
+}
+
+#block-main .module-title {
+    background: url(../images/title.png) bottom repeat-x;
+    padding: 5px;
+    margin-bottom: 0;
+    display: block;
+    line-height: 35px;
+}   
+
+#content
+header{background:transparent url(../images/cont_head.png) bottom left repeat-x;
+padding-bottom:10px;
+margin-bottom:0;
+color:#5F9EA0;
+}
+
+#block-bottom {background:#262626 url(../images/bottom.png);
+border-top:3px double #A5A5A0;
+	
+}
+
+#block-footer 
+	{background:#262626 url(../images/footer.png) ;
+	padding: 15px 0;
+	border-top:5px double #A5A5A0;
+}
+
+
+
+#totop-scroller {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	width: 20px;
+	height: 20px;
+	background: url(../images/totop_scroller.png) 50% 50% no-repeat;
+	text-decoration: none;
+}

@@ -1,0 +1,86 @@
+/* Copyright (C) jvgtheme.pl, GNU/GPL V.3(http://www.gnu.org/licenses/gpl.html)
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+ /* Base
+----------------------------------------------------------------------------------------------------*/
+
+h1{font-size:24px;}
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+
+body#page { background: #FAFAFA; }
+
+#block-toolbar {
+	padding: 5px 0;
+	background: #262626;
+	background: -moz-linear-gradient(top, #262626 40%, #141313 100%);
+	background: -webkit-linear-gradient(top, #262626 40%, #141313 100%);
+	background: -o-linear-gradient(top, #262626 40%, #141313100%);
+}
+
+#block-header{background:#262626 url(../images/deska3.png) repeat ;
+padding: 10px 0;
+border-top:5px double #A5A5A0;
+}
+
+#menu {background:transparent url(../images/menu.png);
+padding:5px 5px ;   
+text-shadow: 2px 2px 14px rgba(124, 117, 110, 0.84);
+}
+#headerbar{color: #d6d6ce}
+ 
+#block-main{background:#D6D6CE  url(../images/climpek.png) repeat;
+padding: 15px 0;
+border-top:5px double #A5A5A0;
+}
+
+#block-bottom {background:#262626 url(../images/wood7.png) repeat;
+border-top:3px double #A5A5A0;
+}
+
+#sidebar-a {background: url(../images/sideb.png) left top repeat-y ;
+}
+
+#bottom-b{color:#b5b5b5;}
+
+#bottom-b
+.module-title {
+background:url(../images/title.png) bottom  repeat-x;
+padding:5px;
+margin-bottom:0;
+}
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+/* Set Active */
+.menu-dropdown li.active .level1 {color:#FFFFFF; 
+-moz-box-shadow: 1px 0 10px 1px #fff;
+-webkit-box-shadow: 1px 0 10px 1px #fff;
+box-shadow: 1px 0 10px 1px #fff;
+  }
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/
+.searchbox input {
+	height: 30px;
+	color: #fff;
+	font-size: 14px;
+}
+  
+/* Item
+----------------------------------------------------------------------------------------------------*/

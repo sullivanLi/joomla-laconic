@@ -1,0 +1,171 @@
+//Load Google webfont
+@import url(//fonts.googleapis.com/css?family=Exo:400,300,700);
+
+//Font mixin
+.gfont-serif{ font-family: 'Exo', sans-serif; }
+
+/*----------------------------------------
+       Common for general purpose
+-----------------------------------------*/
+body{
+  
+    color: #333;
+    .gfont-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+    position : relative;
+}
+#component .block{
+   background: #fff; 
+    border: 1px solid #ddd; }
+a{ text-decoration: none; }
+#top{color: #f5f5f5; }
+
+// block wrapper will not apply for tabs and accordion type
+// same css will applly on tab and accordion type
+.block,
+.tabbable,
+.accordion {padding: 15px; margin: 10px; position: relative; display: block;}
+.no-title > .header {display: none;}
+    .title{margin: 0 0 7px;padding: 0 0 7px;}
+* html .ie6-offset {margin-right: -4px;}
+
+/*Master head*/
+.master-head{
+  .btn-wrap{
+    #translucent > .background(#000, 0.4);
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent #ddd #ddd transparent;
+    padding: 10px;
+    margin: 20px 0;
+    display: inline-block;
+    .border-radius(4px);
+    min-width: 300px;
+  }
+  h3{ font-size: 20px;}
+}
+@media (max-width: 979px) {
+  .master-head .width-block{ float: none; width: 100%; text-align: center;}
+}
+@media (min-width: 980px) and (max-width: 1199px){
+  .master-head h3{ font-size: 18px; line-height: 24px;}
+}
+
+/*Header*/
+.page-header{border:none;}
+
+// Readmore and button
+.btn,
+.button,
+.readon,
+.readmore{
+  display: inline-block;
+  padding: 4px 14px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  .border-radius(0);
+  a, &:hover{
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  }
+}
+
+// Images
+// -------------------------
+
+// Rounded corners
+.img-rounded {
+  .border-radius(6px);
+}
+
+// Add polaroid-esque trim
+.img-polaroid {
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.2);
+  .box-shadow(0 1px 3px rgba(0,0,0,.1));
+}
+
+// Perfect circle
+.img-circle {
+  .border-radius(500px); // crank the border-radius so it works with most reasonably sized images
+}
+// Icons 10x
+.icon-10x {
+  font-size: 10em;
+  &.icon-border {
+    border-width: 10px;
+    .border-radius(12px);
+  }
+}
+
+/*--------------------------------------------------
+        Layout
+---------------------------------------------------*/
+.container{}
+.row{ padding-top: 40px; padding-bottom: 40px}
+#mainbody, #sidebar-a, #sidebar-b{position: relative;}
+
+// Sidebar a/b grid inside grid
+#sidebar-a[class*='grid'] [class*='grid'],
+#sidebar-b[class*='grid'] [class*='grid']{ margin-left: 0; width: 100%;}
+
+#copyright .block{padding: 10px 15px;margin: 0;}
+
+#feature,
+#maintop,
+#main-bottom,
+#bottom{
+  border-top: 1px solid #d7d7d7;
+  .box-shadow(0 -1px 1px #fff);
+}
+/* Positions Specific
+----------------------------------*/
+#roof,
+#top,
+#breadcrumbs,
+#main{ padding-top: 0; padding-bottom: 0; }
+#absolute{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+#roof{
+  .box-shadow(1px -2px 11px rgba(0,0,0,0.3) inset);
+
+  .widget-date,
+  .widget-fontresizer{ padding-top: 0; padding-bottom: 0;}
+
+}
+
+#scrolltop{
+    display: block;
+position: absolute;
+width: 32px;
+height: 28px;
+top: 0px;
+right: 0px;
+z-index: 1;
+}
+
+#utility{
+  padding-bottom: 0;
+  color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+
+  
+}
+
+
+#sidebar-a, #sidebar-b{
+    .block{z-index:10;}
+}
+#footer-wrap{
+  background: @whiteLight;
+  border-top: 1px solid @grayLighter;
+}
+#copyright{ border-top: 1px solid @grayLighter; }

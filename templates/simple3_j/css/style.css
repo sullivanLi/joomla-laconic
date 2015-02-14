@@ -1,0 +1,80 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/*
+ * Style Style Sheet - Defines the main look like colors and backgrounds
+ * Not all style related CSS is included, only colors and backgrounds which may change for different theme styles
+ */
+
+
+/* Base
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Layout
+----------------------------------------------------------------------------------------------------*/
+body#page { background: #d6d6ce; }
+
+#sidebar-a {background:transparent url(../images/sideb.png) left top repeat-y ;
+}
+
+#top-a:after,
+#top-b:after,
+#innertop:after
+
+{
+	content: "";
+	display: block;
+	margin: 0 15px;
+	height: 3px;
+	background: url(../images/after.png) 0 0 repeat-x;
+}
+
+#bottom-a:before,
+#innerbottom:before {
+	content: "";
+	display: block;
+	margin: 0 15px;
+	height: 3px;
+	background: url(../images/after.png) 0 0 repeat-x;
+}
+
+#sidebar-a
+.mod-box{border: 1px solid #ccc; }
+
+#headerbar{color: #d6d6ce}
+
+#bottom-a
+.mod-box:hover
+{background:#A9A9A6;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+#bottom-b
+.mod-box{color:#b5b5b5;}
+
+#bottom-b
+.module-title
+{background:transparent url(../images/title.png) bottom left repeat-x;
+padding-bottom:10px;
+margin-bottom:0;
+}
+
+
+
+
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Modules
+----------------------------------------------------------------------------------------------------*/
+
+
+/* Tools
+----------------------------------------------------------------------------------------------------*/
+
+
+/* System
+----------------------------------------------------------------------------------------------------*/

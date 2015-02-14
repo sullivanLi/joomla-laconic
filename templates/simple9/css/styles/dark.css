@@ -1,0 +1,129 @@
+.clearfix,
+.clear {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after,
+.clear:before,
+.clear:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after,
+.clear:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #e2e2e2;
+  border-bottom: 5px solid #0B0A0A;
+}
+a {
+  color: #3DB3D1;
+}
+a:hover {
+  color: #444;
+  text-decoration: none;
+}
+::selection {
+  background: #3DB3D1;
+  color: #fff;
+}
+::-moz-selection {
+  background: #3DB3D1;
+  color: #fff;
+}
+.colorWhite {
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+#utility {
+  background: url(../../images/backgrounds/mask.png) no-repeat #0b0a0a;
+  background-position: center top;
+}
+#sidebar-a,
+#sidebar-b,
+#sidebar-c,
+#mainbody {
+  background: #e2e2e2;
+}
+#main {
+  background: url(../../images/dark.png) 0 0 repeat #0e2504;
+}
+.button,
+.readon,
+.readmore,
+.btn-primary {
+  background: #008DB0;
+  border: 1px solid #00647d;
+}
+.button:hover,
+.readon:hover,
+.readmore:hover,
+.btn-primary:hover {
+  background-color: #00647d;
+}
+#roof {
+  background: #101010 url(../../images/backgrounds/noise.png) repeat 0 0;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+#roof a {
+  color: #f5f5f5;
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+#header-wrap {
+  background: #1C1C1C url(../../images/backgrounds/darkhed.png) repeat 0 0;
+  -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+#footer-wrap {
+  background: #1C1C1C;
+  padding: 5px;
+  border-top: 1px solid #CDC0B0;
+  color: #b5b5b5;
+}
+#footer-wrap .title span {
+  color: #3DB3D1;
+}
+#bottom {
+  background: #0B4653;
+  color: #fff;
+}
+.ex-menu {
+  background: #101010;
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  border-bottom: 2px solid #000;
+}
+.ex-menu .dropdown {
+  background: #101010;
+}
+#mod-finder-searchform button.finder {
+  background-color: #3DB3D1;
+}
+.nav-list .active > a,
+.nav-list .active:hover > a,
+.nav-list > li > a:hover {
+  border-color: #3DB3D1;
+}
+.title span {
+  color: #3DB3D1;
+}

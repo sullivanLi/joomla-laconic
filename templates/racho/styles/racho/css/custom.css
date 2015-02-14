@@ -1,0 +1,119 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+body {
+    background: #3F4B51 url("../images/body2.png") no-repeat  top;
+}
+
+.tm-footer {background: #3F4B51;
+ color: #99B6BF;    
+}
+
+.tm-footer h2{color:#f0f0f0}
+.tm-footer h3{color:#f0f0f0}
+.tm-footer .uk-panel-title{color:#fff}
+
+.tm-page {background: #e4e4e4 url("../images/grid3.png") repeat  0 0 ;}
+
+.tm-page > .uk-container {
+-webkit-box-shadow: 1px 4px 10px 0px rgba(194, 194, 194, 0.45);
+ -moz-box-shadow: 1px 4px 10px 0px rgba(194, 194, 194, 0.45);
+ box-shadow: 1px 4px 10px 0px rgba(194, 194, 194, 0.45);
+   background: #fff;
+   border-radius: 0px 0px 5px 5px;                    
+}
+
+.tm-block {
+    padding: 20px;
+}
+
+.uk-navbar { 
+border-radius: 5px 5px 0px 0px;
+background:#2ABDE9;
+
+}
+
+.uk-navbar-nav > li > a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+    height: 60px;
+  border-right: 1px solid #55CAED;
+    line-height: 60px;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+html { 
+ background: #3F4B51; 
+}
+
+.tm-totop-scroller {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 20px auto auto;
+    border-radius: 100%;
+    background: #F5F9FA;
+    color: #666;
+    font-size: 14px;
+}
+
+a, .uk-link {color: #2ABDE9}
+.uk-subnav > li > a {
+    color: #2ABDE9;
+}
+.uk-panel-box {  
+ box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1); 
+}
+.uk-panel-box-secondary{-o-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+        -moz-transition: all 0.8s ease 0s;
+        -webkit-transition: all 0.8s ease 0s;
+}
+.uk-panel-box-secondary:hover {
+    transform: translate(0px, 10px);
+    -o-transform: translate(0px, 10px);
+    -ms-transform: translate(0px, 10px);
+    -moz-transform: translate(0px, 10px);
+    -webkit-transform: translate(0px, 10px);
+}
+.uk-panel-box-primary{ -o-transition: all 0.8s ease 0s;
+        -ms-transition: all 0.8s ease 0s;
+        -moz-transition: all 0.8s ease 0s;
+        -webkit-transition: all 0.8s ease 0s;
+}
+
+.uk-panel-box-primary:hover{ transform: translate(0px, -10px);
+        -o-transform: translate(0px, -10px);
+        -ms-transform: translate(0px, -10px);
+        -moz-transform: translate(0px, -10px);
+        -webkit-transform: translate(0px, -10px);}
+
+.tm-headerbar{color: #fff}
+
+/* Large screen and bigger */
+@media (min-width: 1220px) {
+  .uk-container {
+    max-width: 1100px;
+    padding: 0 0;
+  }
+}
+.uk-article-title a {
+    color: #00A8E6;
+    text-decoration: none;
+}
+.uk-panel-title{text-transform: uppercase}
+
+h2{color: #226D8C;
+text-transform: uppercase;
+}
+.uk-offcanvas-bar {
+background: #05343F;
+}
+

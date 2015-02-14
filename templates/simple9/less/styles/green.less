@@ -1,0 +1,93 @@
+/**
+ * @package     Expose Base Theme
+ * @version     2.0
+ * @author      ThemeXpert http://www.themexpert.com
+ * @copyright   Copyright (C) 2010 - 2011 ThemeXpert
+ * @license     http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+ * @file        green.css
+ **/
+
+// Import mixing for better use of CSS3
+@import "../../../../libraries/expose/interface/less/mixins.less";
+
+@body-primary: #f0f0f0;
+@color-primary: #15522E;
+@color-primary-light: #213813;
+@color-primary-extralight: #5bb75b;
+@color-light-black : #444;
+
+body{background:@body-primary ;
+    border-bottom: 5px solid #071400;}
+a{color: @color-primary-extralight;}
+a:hover{color: @color-light-black;text-decoration: none;}
+::selection         {background: @color-primary; color: #fff;}
+::-moz-selection    {background: @color-primary; color: #fff;}
+
+.colorWhite{
+    color: #f5f5f5;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+#main{background:url(../../images/gren.png)0 0 repeat #B1F6CB; }
+#sidebar-a ,#sidebar-b ,#sidebar-c ,#mainbody{background:@body-primary ;}
+
+#utility{background:url(../../images/backgrounds/mask2.png)no-repeat #0e2504;
+      background-position: center top;   
+}
+// Readon and primary button
+.button,
+.readon,
+.readmore,
+.btn-primary{
+  .gradientBar(@color-primary-extralight, @color-primary);
+  border: 1px solid @color-primary-extralight;
+
+  &:hover{
+    background: @color-primary-light;
+  }
+}
+/*----------------------------------
+         Position Specific
+-----------------------------------*/
+#roof{
+  background: url(../../images/backgrounds/noise.png) repeat 0 0 #0c2401;
+  .colorWhite;
+
+  a{.colorWhite;}
+}
+#header-wrap{
+  background: #0c2401 url(../../images/backgrounds/greenhed.jpg) repeat 0 0 ;
+  .box-shadow(0 3px 10px rgba(0,0,0,0.3));
+}
+#footer-wrap{background:#1C1C1C ; 
+padding:5px; 
+border-top: 1px solid #CDC0B0;
+color: #b5b5b5;
+}
+#footer-wrap .title span {color: @color-primary;}
+#bottom{background: #15260B;
+   color: #fff     
+}
+/*----------------------------------
+         Menu style
+-----------------------------------*/
+.ex-menu{ background:#0c2401;
+box-shadow:0 0 4px rgba(0, 0, 0, .4);
+-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);
+-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);	
+
+border-bottom: 2px solid #000;}
+.ex-menu .dropdown {
+    background: #0c2401;
+}
+/*----------------------------------
+          Module Specific
+-----------------------------------*/
+#mod-finder-searchform button.finder{background-color: @color-primary;}
+/* Joomla Menu */
+.nav-list .active > a,
+.nav-list .active:hover > a,
+.nav-list > li > a:hover{
+    border-color: @color-primary;
+}
+
+.title span{color: #2D6314;}

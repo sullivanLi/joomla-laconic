@@ -1,0 +1,64 @@
+/**
+* @version   $Id$
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+// Top Section -----------------
+@topbackground:			#333333;
+@topbackground2:		#222222;
+@toptext:				#adadad;
+@toptitle:				#ffffff;
+@topshadow:				#000000;
+
+// Showcase --------------------
+@showcasebackground:	#212121;
+@showcasebackground2:	#4c4c4c;
+@showcasebackground3:	#7db9e8;
+@showcasetext:			#bbbbbb;
+@showcasetitle:			#ffffff;
+
+
+
+// Logo
+.logo-type-theme5 #rt-logo {
+	background: url(../images/logo/dark/logo.png) 0 0 no-repeat;
+}
+
+   
+
+// Modules
+.title3 {
+	.title {
+		#gradient > .vertical(@topbackground, @topbackground2);
+		.box-shadow(0 2px 4px rgba(0,0,0,0.4));
+		border-bottom: 1px solid @topshadow;
+		color: @toptitle;text-shadow: 1px 1px 1px @topshadow;
+	}
+}
+
+
+
+
+
+// Extras
+.promo {
+	h1 {
+		text-shadow: 1px 2px 7px rgba(0,0,0,0.9);
+		b {
+			color: @topbackground;
+			-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(40%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 0.50)));
+			mask: url(../images/mask.svg#light);
+		}
+
+	}
+	p b {
+		color: @topbackground;
+	}
+}
+
+#rt-drawer {
+	background: @topbackground;
+
+}
