@@ -53,6 +53,7 @@ $styleDateCol = 'style="width:5%;min-width:110px"';
 			<th style="min-width:130px;width:5%;"><?php echo vmText::_ ('COM_VIRTUEMART_ORDER_LIST_NOTIFY'); ?></th>
 			<th width="10%"><?php echo $this->sort ('order_total', 'COM_VIRTUEMART_TOTAL')  ?></th>
 			<th><?php echo $this->sort ('virtuemart_order_id', 'COM_VIRTUEMART_ORDER_LIST_ID')  ?></th>
+			<th>RID</th>
 
 		</tr>
 		</thead>
@@ -143,7 +144,7 @@ $styleDateCol = 'style="width:5%;min-width:110px"';
 				<!-- Total -->
 				<td><?php echo $order->order_total; ?></td>
 				<td><?php echo JHtml::_ ('link', JRoute::_ ($link, FALSE), $order->virtuemart_order_id, array('title' => vmText::_ ('COM_VIRTUEMART_ORDER_EDIT_ORDER_ID') . ' ' . $order->virtuemart_order_id)); ?></td>
-
+<td><?php echo $order->RID ?></td>
 			</tr>
 				<?php
 				$k = 1 - $k;

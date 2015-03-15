@@ -1134,6 +1134,20 @@ class VirtueMartCart {
 				return;
 			}
 
+			$db = JFactory::getDbo();
+			$query = $db->getQuery(true);
+			$fields = array(
+			    $db->quoteName('RID') . ' = ' . $db->quote(JFactory::getSession()->get('RID'))
+			);
+			$conditions = array(
+			    $db->quoteName('virtuemart_order_id') . ' = ' . $this->virtuemart_order_id
+			);
+			$query->update($db->quoteName('ug7bv_virtuemart_orders'))->set($fields)->where($conditions);
+			$db->setQuery($query);
+			$result = $db->execute();
+			JFactory::getSession()->clear('RID');
+			
+
 			$orderModel->notifyCustomer($this->virtuemart_order_id, $orderDetails);
 
 			$dispatcher = JDispatcher::getInstance();

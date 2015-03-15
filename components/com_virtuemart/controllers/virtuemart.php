@@ -52,6 +52,9 @@ class VirtueMartControllerVirtuemart extends JControllerLegacy
 		$viewName = vRequest::getCmd('view', 'virtuemart');
 		$viewLayout = vRequest::getCmd('layout', 'default');
 		
+		$session = JFactory::getSession();
+		$session->set('RID', vRequest::getString('RID',false));
+		
 		//vmdebug('basePath is NOT VMPATH_SITE',$this->basePath,VMPATH_SITE);
 		$view = $this->getView($viewName, $viewType);
 		$view->assignRef('document', $document);
