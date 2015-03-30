@@ -16,7 +16,7 @@ require_once($path.'/helpers/path.php');
 class Warp implements ArrayAccess {
 
 /* branding */
-	protected $_branding = 'Design by <a href="http://jvgtheme.pl">jvgtheme</a> Powered by <a href="http://www.yootheme.com">Warp Theme Framework</a>';
+	protected $_branding = '思科臘國際有限公司 ©2015 All Rights Reserved.';
 
     /* helpers */
 	protected $_helpers = array();

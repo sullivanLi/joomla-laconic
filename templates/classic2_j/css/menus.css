@@ -7,11 +7,11 @@
 ----------------------------------------------------------------------------------------------------*/
 
 /* Level 1 */
-.menu-dropdown { margin-bottom: -10px; }
+.menu-dropdown { margin-bottom: -10px;}
 
 .menu-dropdown li.level1 {
 	margin-right: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 10px; 
 }
 
 .menu-dropdown a.level1,
@@ -24,11 +24,11 @@ padding:5px;
 }
 
 /* Set Active */
-.menu-dropdown li.active .level1 { color: #b5b5b5;background:#000; }
+.menu-dropdown li.active .level1 { color: #000000;background:#55AA00; }
 
 /* Set Hover */
 .menu-dropdown li.level1:hover .level1,
-.menu-dropdown li.remain .level1 { color: #DB3700; background:#111; }
+.menu-dropdown li.remain .level1 { color: #000000; background:#55AA00; }
 
 /* Drop-Down */
 .menu-dropdown .dropdown {

@@ -29,15 +29,12 @@ include($this['path']->path('layouts:template.config.php'));
 
 		<header id="header">
 
-			<?php if ($this['modules']->count('toolbar-l + toolbar-r') || $this['config']->get('date')) : ?>
+			<?php if ($this['modules']->count('toolbar-l + toolbar-r')) : ?>
 			<div id="toolbar" class="clearfix">
 
-				<?php if ($this['modules']->count('toolbar-l') || $this['config']->get('date')) : ?>
+				<?php if ($this['modules']->count('toolbar-l')) : ?>
 				<div class="float-left">
 				
-					<?php if ($this['config']->get('date')) : ?>
-					<time datetime="<?php echo $this['config']->get('datetime'); ?>"><?php echo $this['config']->get('actual_date'); ?></time>
-					<?php endif; ?>
 				
 					<?php echo $this['modules']->render('toolbar-l'); ?>
 					
@@ -65,9 +62,10 @@ include($this['path']->path('layouts:template.config.php'));
 			</div>
 			<?php endif; ?>
 
+			
 			<?php if ($this['modules']->count('menu + search')) : ?>
 			<div id="menubar" class="clearfix">
-				
+				<img src="/joomlatest//images/header.jpg" width="100%" height="100%" />
 				<?php if ($this['modules']->count('menu')) : ?>
 				<nav id="menu"><?php echo $this['modules']->render('menu'); ?></nav>
 				<?php endif; ?>
