@@ -8,6 +8,7 @@
 
 // generate css for layout
 $css[] = sprintf('.wrapper { max-width: %dpx; }', $this['config']->get('template_width'));
+$css[] = sprintf('body { min-width: %dpx; }', $this['config']->get('template_width'));
 
 // generate css for 3-column-layout
 $sidebar_a       = '';
