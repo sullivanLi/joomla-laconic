@@ -64,18 +64,6 @@ if(vRequest::getInt('print',false)){ ?>
     <?php } // Product Navigation END
     ?>
 
-	<?php // Back To Category Button
-	if ($this->product->virtuemart_category_id) {
-		$catURL =  JRoute::_('index.php?option=com_virtuemart&view=category&virtuemart_category_id='.$this->product->virtuemart_category_id, FALSE);
-		$categoryName = $this->product->category_name ;
-	} else {
-		$catURL =  JRoute::_('index.php?option=com_virtuemart');
-		$categoryName = vmText::_('COM_VIRTUEMART_SHOP_HOME') ;
-	}
-	?>
-	<div class="back-to-category">
-    	<a href="<?php echo $catURL ?>" class="product-details" title="<?php echo $categoryName ?>"><?php echo vmText::sprintf('COM_VIRTUEMART_CATEGORY_BACK_TO',$categoryName) ?></a>
-	</div>
 
     <?php // Product Title   ?>
     <h1><?php echo $this->product->product_name ?></h1>
@@ -110,18 +98,8 @@ if(vRequest::getInt('print',false)){ ?>
     <?php } // PDF - Print - Email Icon END
     ?>
 
-    <?php
-    // Product Short Description
-    if (!empty($this->product->product_s_desc)) {
-	?>
-        <div class="product-short-description">
-	    <?php
-	    /** @todo Test if content plugins modify the product description */
-	    echo nl2br($this->product->product_s_desc);
-	    ?>
-        </div>
+    
 	<?php
-    } // Product Short Description END
 
 	echo shopFunctionsF::renderVmSubLayout('customfields',array('product'=>$this->product,'position'=>'ontop'));
     ?>
@@ -137,6 +115,11 @@ echo $this->loadTemplate('images');
 	    <div class="spacer-buy-area">
 
 		<?php
+		if (!empty($this->product->product_s_desc)) {
+			echo nl2br($this->product->product_s_desc);
+		}
+		// Product Short Description END
+		
 		// TODO in Multi-Vendor not needed at the moment and just would lead to confusion
 		/* $link = JRoute::_('index2.php?option=com_virtuemart&view=virtuemart&task=vendorinfo&virtuemart_vendor_id='.$this->product->virtuemart_vendor_id);
 		  $text = vmText::_('COM_VIRTUEMART_VENDOR_FORM_INFO_LBL');
