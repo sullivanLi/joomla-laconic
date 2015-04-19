@@ -90,7 +90,7 @@ if (($font = $this['config']->get('font2')) && $this['path']->path("css:/font2/$
 if (($font = $this['config']->get('font3')) && $this['path']->path("css:/font3/$font.css")) { $this['asset']->addFile('css', "css:/font3/$font.css"); }
 $this['asset']->addFile('css', 'css:style.css');
 if ($this['config']->get('direction') == 'rtl') $this['asset']->addFile('css', 'css:rtl.css');
-$this['asset']->addFile('css', 'css:responsive.css');
+
 $this['asset']->addFile('css', 'css:print.css');
 
 // load fonts
@@ -124,7 +124,6 @@ $this['config']->set('body_config', json_encode($body_config));
 
 // add javascripts
 $this['asset']->addFile('js', 'js:warp.js');
-$this['asset']->addFile('js', 'js:responsive.js');
 $this['asset']->addFile('js', 'js:accordionmenu.js');
 $this['asset']->addFile('js', 'js:dropdownmenu.js');
 $this['asset']->addFile('js', 'js:template.js');

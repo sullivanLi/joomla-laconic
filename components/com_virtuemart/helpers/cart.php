@@ -1147,7 +1147,33 @@ class VirtueMartCart {
 			$result = $db->execute();
 			JFactory::getSession()->clear('RID');
 			
-
+			//send mail
+			$mailer = JFactory::getMailer();
+			$config = JFactory::getConfig();
+			$sender = array( 
+			    $config->get( 'mailfrom' ),
+			    $config->get( 'fromname' ) 
+			);
+			$mailer->setSender($sender);
+			$user = JFactory::getUser(838);
+			$recipient = $user->email;
+			$mailer->addRecipient($recipient);
+			$uri = JFactory::getURI();
+			$absolute_url = $uri->toString();
+			$orderNum = $orderModel ->getOrderNumber($this->virtuemart_order_id);
+			$orderPass = $orderModel ->getOrderPass($this->virtuemart_order_id);
+			$body   = '<div>訂單編號: ' . $orderNum . '</div>'
+			    . '<div>訂單密碼: ' . $orderPass . '</div>'
+			    . '訂單內容: <a href="' . $absolute_url
+				. '?option=com_virtuemart&view=orders&layout=details&order_number=' . $orderNum
+				. '&order_pass=' . $orderPass . '">詳細資料</a>';
+			$mailer->isHTML(true);
+			$mailer->Encoding = 'base64';
+			$mailer->setBody($body);
+			$mailer->setSubject('Laconic網站有新訂單');
+			$send = $mailer->Send();
+			//send mail end
+			
 			$orderModel->notifyCustomer($this->virtuemart_order_id, $orderDetails);
 
 			$dispatcher = JDispatcher::getInstance();

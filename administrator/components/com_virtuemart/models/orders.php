@@ -85,6 +85,16 @@ class VirtueMartModelOrders extends VmModel {
 
 	}
 
+	public function getOrderPass($virtuemart_order_id){
+
+		$db = JFactory::getDBO();
+		$q = 'SELECT `order_pass` FROM `#__virtuemart_orders` WHERE virtuemart_order_id="'.(int)$virtuemart_order_id.'"  ';
+		$db->setQuery($q);
+		$OrderPass = $db->loadResult();
+		return $OrderPass;
+
+	}
+
 	/**
 	 * Was also broken, actually used?
 	 *
