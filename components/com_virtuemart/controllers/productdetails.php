@@ -45,7 +45,13 @@ class VirtueMartControllerProductdetails extends JControllerLegacy {
 		} else {
 			$viewName = 'Productdetails';
 		}
-
+		
+		$session = JFactory::getSession();
+		$rid = vRequest::getString('RID',false);
+		if (!empty($rid)) {
+			$session->set('RID', $rid);
+		}
+		
 		$view = $this->getView ($viewName, $format);
 
 		$view->display ();
