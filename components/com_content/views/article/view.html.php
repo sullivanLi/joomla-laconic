@@ -45,6 +45,13 @@ class ContentViewArticle extends JViewLegacy
 		$this->print	= $app->input->getBool('print');
 		$this->state	= $this->get('State');
 		$this->user		= $user;
+		
+		$session = JFactory::getSession();
+		$jinput = JFactory::getApplication()->input;
+		$rid = $jinput->get('RID', false, false);
+		if (!empty($rid)) {
+			$session->set('RID', $rid);
+		}
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
